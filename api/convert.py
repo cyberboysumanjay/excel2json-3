@@ -141,7 +141,7 @@ def jsonify(worksheet, loc):
 
     # dump list of dict to JSON file
     try:
-        json_file = os.path.join(loc, worksheet.name + '.json')
+        json_file = os.path.join(loc + '.json')
         with open(json_file, 'w') as json_fd:
             json.dump(
                 dict_list, json_fd, sort_keys=False,
